@@ -88,6 +88,24 @@ ul {
     margin-top: 0;
   }
 
+  #dialogBox::backdrop {
+    opacity: 1;
+    background-color: rgb(25, 25, 170);
+    backdrop-filter: blur(5px);
+  }
+  #dialogBox {
+    box-shadow: 4px 8px #8888881f;
+    border-radius: 3px;
+    border: none;
+    width: 25vw;
+  }
+  #dialogBox header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
 
@@ -96,5 +114,7 @@ ul {
   .bgimg-3 {
     background-attachment: scroll;
   }
+  #dialogBox {
+    width: 90%;}
 }
 
